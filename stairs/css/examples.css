@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap);
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Bold.woff2") format("woff2"), url("../fonts/CormorantUpright-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Regular.woff2") format("woff2"), url("../fonts/CormorantUpright-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-SemiBold.woff2") format("woff2"), url("../fonts/CormorantUpright-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: TTTrailers;
+  font-display: swap;
+  src: url("../fonts/TTTrailers-Regular.woff2") format("woff2"), url("../fonts/TTTrailers-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Montserrat;
+  font-weight: 400;
+  background-color: #fff;
+  color: #202020;
+}
+
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+/*---------------------------------------*/
+
+.main__examples {
+}
+.examples {
+    padding: 30px 0px 130px 0px;
+}
+.examples__container {
+}
+.examples__title {
+    margin-bottom: 40px;
+}
+.title {
+}
+.examples__body {
+    align-items:center;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+}
+.examples__items {
+    display: flex;
+    gap: 30px;
+}
+.examples__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.examples__image {
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+.examples__image img {
+    
+    max-width: 100%;
+}
+.examples__image:hover {
+    cursor: pointer;
+    
+}
+@media(max-width:991.98px) {
+    .examples {
+        padding: 30px 0px 100px 0px;
+    }
+}
+@media(max-width:767.98px) {
+    .examples__body {
+        flex-direction: column;
+    }
+    .examples {
+        padding: 30px 0px 80px 0px;
+    }
+    .examples__title {
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:467.98px) {
+    .examples__items {
+        
+        flex-direction: column;
+    }
+    .examples {
+        padding: 30px 0px 40px 0px;
+    }
+    .examples__title {
+        margin-bottom: 20px;
+    }
+}
